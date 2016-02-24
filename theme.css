@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.container-fluid {
+  box-shadow: 3px 3px 3px #CCCCCC;
+  border-radius: 0px !important;
+  border: none !important; }
+  .container-fluid:hover {
+    box-shadow: 6px 6px 6px #CCCCCC;
+    position: relative;
+    left: -2px; }
+  .container-fluid .pane-header {
+    border-radius: 0px !important; }
+
+#projectstatus {
+  box-shadow: 6px 6px 6px #CCCCCC; }
+
+#projectstatus tbody tr:last-child td:first-child, #projectstatus tr:last-child td:last-child, #projectstatus tbody tr:first-child th:first-child, #projectstatus tbody tr:first-child th:last-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+
+.header th {
+  background-color: #106cc8; }
+
+table.sortable a.sortheader, table.sortable span.sortarrow {
+  color: #FFFFFF;
+  font-weight: normal; }
+
+.tabBar .tab {
+  border-color: #106cc8;
+  margin-left: -1px; }
+  .tabBar .tab:first-child {
+    margin-left: 1px; }
+  .tabBar .tab a {
+    padding: 5px 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #106cc8;
+    border-color: #106cc8; }
+    .tabBar .tab a.addTab {
+      color: #DFDFDF;
+      border: none;
+      margin-left: 1px;
+      padding: 3px 7px;
+      font-size: 17px; }
+  .tabBar .tab:hover {
+    background-color: #106cc8; }
+    .tabBar .tab:hover a.addTab {
+      background-color: #FFFFFF;
+      color: #106cc8; }
+
+.tabBar .tab.active {
+  box-shadow: 6px 6px 6px #CCCCCC; }
+
+.tabBar [type=radio]:checked ~ a {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: #FFFFFF;
+  background-color: #106cc8;
+  border-color: #106cc8;
+  font-weight: normal; }
+
+.job-status-blue {
+  background-color: #A3FEBA !important; }
+
+.job-status-red {
+  background-color: #FFBBDD !important; }
+
+.pane-frame {
+  border-radius: 0px !important; }
+
+img.icon-clock {
+  display: none;
+  width: 0px; }
+
+.fa.clock {
+  font-size: 17px; }
