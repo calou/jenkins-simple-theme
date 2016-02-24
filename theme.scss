@@ -26,10 +26,12 @@ $header-color: rgb(16,108,200);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
 }
-
+ #header {
+    background-color: $header-color;
+}
 .container-fluid {
     box-shadow: 3px 3px 3px #CCCCCC;
-    border-radius: 0px !important;
+    @include no-border-radius();
     border: none !important;
     
     &:hover {
@@ -40,11 +42,28 @@ $header-color: rgb(16,108,200);
     
     .pane-header {
         border-radius: 0px !important;
+        background-color: $header-color;
+        color: #FFFFFF;
+        font-weight: normal;
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .row {
+        background-color: #F8F8F8;
     }
 }
+
+.task > a > img {
+    display:none;
+}
+
 #projectstatus {
     @include box-shadow();
 }
+
 #projectstatus tbody tr:last-child td:first-child, #projectstatus tr:last-child td:last-child, #projectstatus tbody tr:first-child th:first-child, #projectstatus tbody tr:first-child th:last-child {
     @include no-border-radius();
 }
@@ -116,4 +135,8 @@ img.icon-clock{
 
 .fa.clock {
     font-size: 17px;
+}
+
+#description-link {
+    display: none;
 }
