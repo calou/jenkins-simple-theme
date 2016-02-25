@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Montserrat);
 @font-face {
   font-family: 'FontAwesome';
   src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0");
@@ -7,15 +7,33 @@
   font-weight: normal;
   font-style: normal; }
 
+h1, h2, h3, h4 {
+  font-family: Montserrat;
+  font-weight: normal; }
+
+thead tr, th {
+  background-color: #106cc8 !important;
+  color: #FFFFFF;
+  font-weight: normal; }
+
+select, input, textarea, button {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important; }
+
+select {
+  padding: 6px; }
+
 #header {
   background-color: #106cc8; }
 
 .container-fluid {
   box-shadow: 3px 3px 3px #CCCCCC;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
   border: none !important; }
   .container-fluid:hover {
     box-shadow: 6px 6px 6px #CCCCCC;
@@ -38,10 +56,10 @@
   box-shadow: 6px 6px 6px #CCCCCC; }
 
 #projectstatus tbody tr:last-child td:first-child, #projectstatus tr:last-child td:last-child, #projectstatus tbody tr:first-child th:first-child, #projectstatus tbody tr:first-child th:last-child {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important; }
 
 .header th {
   background-color: #106cc8; }
@@ -57,10 +75,10 @@ table.sortable a.sortheader, table.sortable span.sortarrow {
     margin-left: 1px; }
   .tabBar .tab a {
     padding: 5px 7px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
     color: #106cc8;
     border-color: #106cc8; }
     .tabBar .tab a.addTab {
@@ -88,19 +106,40 @@ table.sortable a.sortheader, table.sortable span.sortarrow {
 
 .job-status-blue {
   background-color: #A3FEBA !important; }
+  .job-status-blue:hover {
+    background-color: #72FE95 !important; }
+
+.job-status-blue-anime, .job-status-red-anime {
+  background-color: #CACAFF !important; }
+  .job-status-blue-anime:hover, .job-status-red-anime:hover {
+    background-color: #BBBBFF !important; }
 
 .job-status-red {
   background-color: #FFBBDD !important; }
+  .job-status-red:hover {
+    background-color: #FFA4A4 !important; }
 
 .pane-frame {
   border-radius: 0px !important; }
 
-img.icon-clock {
-  display: none;
-  width: 0px; }
-
-.fa.clock {
-  font-size: 17px; }
-
-#description-link {
+#description-link, #searchform > a, #main-panel > div.dashboard > div:nth-child(3), #jenkins-name-icon, #jenkins-head-icon {
   display: none; }
+
+#search-box {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  box-shadow: none;
+  background-image: none;
+  height: 28px;
+  padding-left: 10px; }
+
+#header .login {
+  margin-right: 0px;
+  padding: 6px 0px; }
+  #header .login a:last-child {
+    margin-right: 10px; }
+
+#jenkins-home-link {
+  text-decoration: none; }

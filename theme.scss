@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Montserrat);
 
 @font-face {
     font-family:'FontAwesome';src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0');src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
@@ -10,21 +10,29 @@
     box-shadow: 6px 6px 6px #CCCCCC;
 }
 @mixin no-border-radius(){
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
 }
 
 $header-color: rgb(16,108,200);
 
-@mixin fa() {
-    display:inline-block;
-    font:normal normal normal 14px/1 FontAwesome;
-    font-size:inherit;
-    text-rendering:auto;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+h1, h2, h3, h4 {
+    font-family: Montserrat;
+    font-weight: normal;
+}
+thead tr, th {
+    background-color: $header-color !important;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+select, input, textarea, button {
+    @include no-border-radius();
+}
+select {
+    padding: 6px;
 }
  #header {
     background-color: $header-color;
@@ -120,23 +128,48 @@ table.sortable a.sortheader, table.sortable span.sortarrow {
 
 .job-status-blue {
     background-color: #A3FEBA !important;
+
+    &:hover {
+        background-color: #72FE95 !important;
+    }
+}
+.job-status-blue-anime, .job-status-red-anime {
+    background-color: #CACAFF !important;
+
+    &:hover {
+        background-color: #BBBBFF !important;
+    }
 }
 .job-status-red {
     background-color: #FFBBDD !important;
+
+    &:hover {
+        background-color: #FFA4A4 !important;
+    }
 }
 .pane-frame {
     border-radius: 0px !important;
 }
 
-img.icon-clock{
-    display:none;
-    width:0px;
-}
-
-.fa.clock {
-    font-size: 17px;
-}
-
-#description-link {
+#description-link, #searchform > a, #main-panel > div.dashboard > div:nth-child(3), #jenkins-name-icon, #jenkins-head-icon {
     display: none;
 }
+#search-box {
+    @include no-border-radius();
+    box-shadow: none;
+    background-image:none;
+    height: 28px;
+    padding-left: 10px;
+}
+
+#header .login {
+    margin-right: 0px;
+    padding: 6px 0px;
+    a:last-child {
+        margin-right: 10px;
+    }
+}
+
+#jenkins-home-link {
+    text-decoration: none;
+ }
