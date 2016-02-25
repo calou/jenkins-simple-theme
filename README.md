@@ -3,4 +3,4 @@ Requires [Simple theme plugin](https://wiki.jenkins-ci.org/display/JENKINS/Simpl
 
 
 ## Screenshot
-![alt text](https://raw.githubusercontent.com/calou/jenkins-simple-theme/master/Screenshot "Screenshot")
+![alt text](https://raw.githubusercontent.com/calou/jenkins-simple-theme/master/Screenshot.png "Screenshot")
