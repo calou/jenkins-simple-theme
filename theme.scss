@@ -173,3 +173,14 @@ table.sortable a.sortheader, table.sortable span.sortarrow {
 #jenkins-home-link {
     text-decoration: none;
  }
+
+.progress-bar, .progress-bar-done, .progress-bar-left {
+    border-color: #CCCCCC !important;
+    padding: 2px !important;
+}
+.progress-bar {
+    margin-top: 2px;
+}
+.progress-bar-left {
+    background-color: #CCCCCC !important;
+}
