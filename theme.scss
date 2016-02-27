@@ -172,6 +172,13 @@ table.sortable a.sortheader, table.sortable span.sortarrow {
 
 #jenkins-home-link {
     text-decoration: none;
+    &:after{
+        content:'Jenkins';
+        font-family:'Lobster', cursive;
+        font-size:28px;
+        color:#FFFFFF;
+        text-decoration:none;
+    }
  }
 
 .progress-bar, .progress-bar-done, .progress-bar-left {
